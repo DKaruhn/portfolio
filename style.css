@@ -202,6 +202,93 @@ section{padding:28px 0 8px}
     .nav-links.open{display:flex}
 }
 
+
+/* === Project section === */
+.project-desc{
+    color:var(--muted);
+    margin: 4px 0 16px;
+    max-width: 70ch;
+}
+
+.project-card{
+    display:block; position:relative; overflow:hidden;
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    border:1px solid rgba(255,255,255,.10);
+    box-shadow: var(--shadow);
+    transition: transform .25s ease, box-shadow .3s ease, border-color .25s ease, filter .25s ease;
+}
+/* Linkzustände neutral halten (verhindert lila) */
+.project-card,
+.project-card:link,
+.project-card:visited{
+    color: var(--text);
+    text-decoration: none;
+}
+
+.project-card::before{
+    content:""; position:absolute; inset:0;
+    background: radial-gradient(130% 120% at 100% 0%, rgba(110,231,255,.18), transparent 55%),
+    radial-gradient(120% 120% at 0% 100%, rgba(124,77,255,.14), transparent 60%);
+    opacity:.0; transition: opacity .25s ease;
+    pointer-events:none; mix-blend-mode: screen;
+}
+
+.project-card:hover{
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(110,231,255,.35);
+    box-shadow: 0 18px 36px rgba(124,77,255,.18);
+}
+.project-card:hover::before{ opacity:1; }
+
+.project-thumb{
+    width:100%; display:block; aspect-ratio: 16 / 9; object-fit: cover;
+    filter: saturate(108%) contrast(104%);
+}
+
+.project-meta{
+    position:absolute; left:16px; right:16px; bottom:14px;
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    padding:10px 12px; border-radius:14px;
+    background: rgba(11,15,20,.55);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(6px);
+}
+
+/* Titel immer türkis – unabhängig vom Linkzustand */
+.project-title{
+    font-weight:800; letter-spacing:.2px;
+    color: var(--accent1);
+    text-decoration: none;
+}
+.project-card:link .project-title,
+.project-card:visited .project-title,
+.project-card:hover .project-title,
+.project-card:active .project-title{
+    color: var(--accent1);
+}
+
+.project-sub{ color:var(--muted); font-size:.95rem; }
+
+.project-tag{
+    flex:none; padding:6px 10px; border-radius:999px; font-weight:800; letter-spacing:.2px;
+    background: linear-gradient(135deg,var(--accent2),var(--accent1));
+    color:#071018; box-shadow:0 6px 22px rgba(110,231,255,.25);
+}
+
+
+/* Keyboard focus */
+.project-card:focus-visible{
+    outline: 2px solid var(--accent1);
+    outline-offset: 3px;
+}
+
+/* mobile niceties */
+@media (max-width:700px){
+    .project-meta{ left:12px; right:12px; bottom:12px; }
+    .project-sub{ display:none; } /* kompakter auf sehr kleinen Screens */
+}
+
 /* footer-icon */
 .footer-link {
     display:inline-block;
