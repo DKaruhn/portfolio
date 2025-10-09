@@ -7,7 +7,6 @@ if (navToggle) {
     });
 }
 
-// Year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // Reveal on scroll
@@ -22,7 +21,6 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 revealEls.forEach(el => io.observe(el));
 
-// Smooth scroll for internal anchors
 document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (ev) => {
         const id = a.getAttribute('href').slice(1);

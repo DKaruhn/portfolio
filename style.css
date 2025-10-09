@@ -20,7 +20,6 @@ body{
     overflow-x:hidden;
 }
 
-/* animated accent blob */
 .bg-accent{
     position:fixed; inset:-20% -10% auto auto; width:50vmax; height:50vmax;
     background: radial-gradient(circle at 30% 30%, rgba(110,231,255,.15), transparent 55%),
@@ -218,7 +217,7 @@ section{padding:28px 0 8px}
     box-shadow: var(--shadow);
     transition: transform .25s ease, box-shadow .3s ease, border-color .25s ease, filter .25s ease;
 }
-/* Linkzustände neutral halten (verhindert lila) */
+
 .project-card,
 .project-card:link,
 .project-card:visited{
@@ -255,7 +254,6 @@ section{padding:28px 0 8px}
     backdrop-filter: blur(6px);
 }
 
-/* Titel immer türkis – unabhängig vom Linkzustand */
 .project-title{
     font-weight:800; letter-spacing:.2px;
     color: var(--accent1);
@@ -286,7 +284,7 @@ section{padding:28px 0 8px}
 /* mobile niceties */
 @media (max-width:700px){
     .project-meta{ left:12px; right:12px; bottom:12px; }
-    .project-sub{ display:none; } /* kompakter auf sehr kleinen Screens */
+    .project-sub{ display:none; }
 }
 
 /* footer-icon */
