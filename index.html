@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darren Karuhn – Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -16,131 +21,116 @@
             <span class="dot"></span>
             Darren Karuhn
         </a>
-        <button class="nav-toggle" aria-label="Navigation öffnen/schließen">
+        <button class="nav-toggle" aria-label="Navigation">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links">
             <li><a href="#about">Über mich</a></li>
-            <li><a href="#project">Neuestes Projekt</a></li>
+            <li><a href="#project">Projekt</a></li>
             <li><a href="#skills">Fähigkeiten</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
-
     </nav>
 </header>
 
 <main id="home">
-    <!-- HERO -->
     <section class="hero container reveal">
         <div class="hero__text">
+            <div class="status-badge">🟢 Available for work</div>
             <h1 class="headline">
                 <span class="hi">Hi, ich bin Darren.</span><br />
                 <span class="role">Anwendungsentwickler</span>
             </h1>
             <p class="subline">
-                Frisch ausgebildeter Fachinformatiker für Anwendungsentwicklung mit
-                Hands-on-Erfahrung in agilen Projekten.
-                Technologiefit in Java, Angular, React und MySQL – plus Automatisierung
-                mit Power Automate &amp; SharePoint. Kreativ, teamorientiert, analytisch
-                und mit Leidenschaft für innovative Software.
+                Frisch ausgebildeter Fachinformatiker für Anwendungsentwicklung.
+                Spezialisiert auf skalierbare Backends mit <strong>Java Spring Boot</strong>,
+                moderne Web-Frontends und <strong>KI-Integrationen</strong>.
+                Analytisch, kreativ und fokussiert auf Clean Code.
             </p>
             <div class="cta-row">
-                <a class="btn primary" href="#contact">📬 Kontakt aufnehmen</a>
-                <a class="btn ghost" href="#skills">⚡ Fähigkeiten ansehen</a>
+                <a class="btn primary" href="#contact">📬 Kontakt</a>
+                <a class="btn ghost" href="#project">🚀 Highlight ansehen</a>
             </div>
         </div>
         <div class="hero__photo">
             <div class="photo-frame float">
-                <img src="assets/img/lichtbild.jpg" alt="Foto von Darren Karuhn" />
+                <img src="assets/img/lichtbild.jpg" alt="Darren Karuhn" />
             </div>
         </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="about container reveal">
         <div class="card">
             <h2 class="section-head"><span class="section-ico">👤</span> Über mich</h2>
-            <p>
-                Schon als Kind habe ich mit Begeisterung programmiert und meine ersten kleinen
-                Spiele und Tools gebastelt. Für mich war es immer mehr als nur Code, es war eine
-                Möglichkeit, meine Kreativität auszuleben und eigene Ideen Wirklichkeit werden zu lassen.
-            </p>
-            <p>
-                Heute begeistert mich vor allem die Kombination aus <strong>Kreativität</strong> und
-                <strong>Problemlösungsfähigkeit</strong>. Ich liebe es, komplexe Herausforderungen zu
-                analysieren, elegante Lösungen zu entwickeln und Projekte zum Erfolg zu führen.
-                Dabei lege ich großen Wert auf sauberen Code, eine klare Struktur und
-                nutzerorientierte Ergebnisse.
-            </p>
-            <p>
-                Meine Ausbildung habe ich 2025 in Bremen als
-                <strong>Fachinformatiker für Anwendungsentwicklung</strong> abgeschlossen. Während dieser Zeit
-                konnte ich bei <strong>Neusta HEC</strong> in agilen Teams wertvolle Erfahrung sammeln -
-                von modernen <strong>Java- &amp; Angular-Anwendungen</strong> über
-                <strong>React</strong>-basierte UIs bis hin zu <strong>KI-Lösungen</strong> und
-                <strong>Automatisierungen</strong> mit Power Automate &amp; SharePoint.
-            </p>
-            <p>
-                Besonders faszinierend finde ich den Bereich <strong>Künstliche Intelligenz</strong>:
-                ich habe bereits eigene Chatbots entwickelt, aufgesetzt und bereitgestellt.
-                Solche Projekte zeigen mir immer wieder, wie spannend es ist,
-                an der Schnittstelle von Technik und Zukunft zu arbeiten.
-            </p>
-            <p>
-                Ich bin neugierig, offen für neue Technologien und liebe es, mich ständig
-                weiterzuentwickeln. Für mich ist jedes Projekt eine Chance, nicht nur
-                <em>Software</em>, sondern auch <em>echten Mehrwert</em> zu schaffen.
-            </p>
+            <div class="text-content">
+                <p>
+                    Schon als Kind habe ich meine ersten Zeilen Code geschrieben, einfach aus Spaß daran, eigene Ideen am Bildschirm zum Leben zu erwecken.
+                    Diese frühe Begeisterung ist geblieben und ist heute mein Antrieb, Software nicht nur zu "schreiben", sondern echte Lösungen zu entwickeln.
+                </p>
+                <p>
+                    Meine Ausbildung zum Fachinformatiker habe ich Ende 2025 bei <strong>Neusta HEC</strong> abgeschlossen.
+                    Dort habe ich den professionellen Entwickler-Alltag von Grund auf verinnerlicht:
+                    vom Arbeiten in <strong>agilen Teams (Scrum)</strong> bis hin zum sicheren Umgang mit <strong>Git</strong> im Team-Workflow.
+                </p>
+                <p>
+                    Ein spannender Schwerpunkt war dabei die Arbeit in einem <strong>Microsoft-orientierten Team</strong>.
+                    Hier konnte ich fundierte Erfahrungen mit <strong>Power Automate</strong> und <strong>SharePoint</strong> sammeln und diese Prozess-Kenntnisse
+                    direkt mit der Backend-Entwicklung verknüpfen.
+                </p>
+                <p>
+                    Doch ich bin nicht nur im Backend zuhause: Ich habe genauso viel Spaß daran, mich im <strong>Frontend kreativ auszutoben</strong>
+                    und Benutzeroberflächen aktiv mitzugestalten. Es fasziniert mich, komplexe Logik hinter intuitiven Designs zugänglich zu machen.
+                    Genau diese Vielseitigkeit, von der Datenbank über die Business-Logik bis zum UI - definiert mich heute als <strong>Fullstack-Entwickler</strong>.
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- PROJECT -->
     <section id="project" class="project container reveal">
-        <div class="card card--section">
+        <div class="card card--highlight">
             <h2 class="section-head"><span class="section-ico">🚀</span> Neuestes Projekt</h2>
 
             <p class="project-desc">
-                Mit <strong>FoodTrackerZ</strong> habe ich eine intelligente Web-App entwickelt, die das Ernährungstracking durch <strong>KI-Integration</strong> maximal vereinfacht.
-                Die Anwendung bietet komplexe Features wie <strong>Social-Tracking</strong> (gemeinsam mit Freunden), Algorithmen zur Berechnung von <strong>Körperfettanteil & Gewichtsprognosen</strong> sowie eine interaktive Kalenderübersicht.
+                <strong>FoodTrackerZ</strong> das Ernährungstracking durch intelligente <strong>KI-Integration</strong>.
+                Die Anwendung kombiniert soziale Features mit komplexen Algorithmen und einem intuitiven Dashboard.
                 <br><br>
-                <em>Tech-Stack:</em> Das Backend basiert komplett auf <strong>Spring Boot (Java)</strong> mit einer <strong>MySQL</strong>-Datenbank für persistente Speicherung, während das Frontend (HTML/CSS) für Mobile & Desktop optimiert ist.
+                <span class="stack-highlight">Tech-Stack: Spring Boot (Java) • MySQL • AI Integration</span>
             </p>
 
             <a class="project-card"
                href="http://foodtrackerz.duckdns.org/"
-               target="_blank" rel="noopener"
-               aria-label="FoodTrackerZ App öffnen">
-                <img class="project-thumb"
-                     src="assets/img/project_preview.png"
-                     alt="Vorschau der FoodTrackerZ App auf Laptop und Smartphone"
-                     loading="lazy" />
+               target="_blank" rel="noopener">
+                <div class="thumb-wrapper">
+                    <img class="project-thumb"
+                         src="assets/img/project_preview.png"
+                         alt="FoodTrackerZ Interface"
+                         loading="lazy" />
+                </div>
                 <div class="project-meta">
                     <div class="project-text">
                         <div class="project-title">FoodTrackerZ – Smart AI Nutrition</div>
-                        <div class="project-sub">Spring Boot Backend · MySQL · Social Features</div>
+                        <div class="project-sub">Spring Boot Backend &amp; Social Features</div>
                     </div>
-                    <span class="project-tag">Live</span>
+                    <span class="project-tag"><span class="pulse"></span> Live System</span>
                 </div>
             </a>
         </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="skills container reveal">
-        <div class="card card--section">
-            <h2 class="section-head"><span class="section-ico">🛠️</span> Fähigkeiten</h2>
+        <div class="card">
+            <h2 class="section-head"><span class="section-ico">🛠️</span> Tech Stack</h2>
 
-            <h3>🖥️ Programmiersprachen</h3>
+            <h3>Core & Languages</h3>
             <div class="skills-grid">
                 <div class="skill"><img src="assets/icons/java.png" alt="Java"><span>Java</span></div>
-                <div class="skill"><img src="assets/icons/javascript.png" alt="JavaScript"><span>JavaScript</span></div>
                 <div class="skill"><img src="assets/icons/python.png" alt="Python"><span>Python</span></div>
-                <div class="skill"><img src="assets/icons/php.png" alt="PHP"><span>PHP</span></div>
                 <div class="skill"><img src="assets/icons/typescript.png" alt="TypeScript"><span>TypeScript</span></div>
-                <div class="skill"><img src="assets/icons/gdscript.png" alt="GDScript"><span>GDScript</span></div>
+                <div class="skill"><img src="assets/icons/php.png" alt="PHP"><span>PHP</span></div>
+                <div class="skill"><img src="assets/icons/mysql.png" alt="MySQL"><span>MySQL</span></div>
             </div>
 
-            <h3>⚡ Frameworks & Libraries</h3>
+            <h3>Frameworks & Web</h3>
             <div class="skills-grid">
                 <div class="skill"><img src="assets/icons/angular.png" alt="Angular"><span>Angular</span></div>
                 <div class="skill"><img src="assets/icons/react.png" alt="React"><span>React</span></div>
@@ -148,46 +138,41 @@
                 <div class="skill"><img src="assets/icons/tailwind.png" alt="Tailwind"><span>Tailwind</span></div>
             </div>
 
-            <h3>🔧 Tools & Plattformen</h3>
+            <h3>Workflow & Tools</h3>
             <div class="skills-grid">
-                <div class="skill"><img src="assets/icons/mysql.png" alt="MySQL"><span>MySQL</span></div>
                 <div class="skill"><img src="assets/icons/sharepoint.png" alt="SharePoint"><span>SharePoint</span></div>
-                <div class="skill"><img src="assets/icons/powerautomate.png" alt="Power Automate"><span>Power Automate</span></div>
+                <div class="skill"><img src="assets/icons/powerautomate.png" alt="Power Automate"><span>Power Auto</span></div>
                 <div class="skill"><img src="assets/icons/jira.png" alt="Jira"><span>Jira</span></div>
+                <div class="skill"><img src="assets/icons/gdscript.png" alt="GDScript"><span>GDScript</span></div>
             </div>
         </div>
     </section>
 
-
-    <!-- CONTACT -->
     <section id="contact" class="contact container reveal">
-        <div class="card card--section">
+        <div class="card">
             <h2 class="section-head"><span class="section-ico">📬</span> Kontakt</h2>
-            <a class="contact-item" href="mailto:dkaruhn@proton.me" aria-label="E-Mail an Darren Karuhn senden">
-                <span class="ci-ico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
-                    <path d="m22 8-10 7L2 8"/>
-                  </svg>
-                </span>
-                <div class="ci-text">
-                    <div class="ci-title">E-Mail</div>
-                    <div class="ci-sub">dkaruhn@proton.me</div>
-                </div>
-                <span class="ci-arrow">→</span>
-            </a>
-            <a class="contact-item" href="https://www.linkedin.com/in/darren-karuhn" target="_blank" rel="noopener" aria-label="LinkedIn Profil von Darren Karuhn öffnen">
-                <span class="ci-ico">
-                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8.5h4.9V24H.5zM9 8.5h4.7v2.1h.1c.7-1.3 2.5-2.7 5.1-2.7 5.4 0 6.4 3.5 6.4 8.1V24h-4.9v-6.8c0-1.6 0-3.7-2.3-3.7-2.3 0-2.6 1.7-2.6 3.6V24H9z"/>
-                  </svg>
-                </span>
-                <div class="ci-text">
-                    <div class="ci-title">LinkedIn</div>
-                    <div class="ci-sub">/in/darren-karuhn</div>
-                </div>
-                <span class="ci-arrow">→</span>
-            </a>
+            <div class="contact-grid">
+                <a class="contact-item" href="mailto:dkaruhn@proton.me">
+                    <span class="ci-ico">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="m22 8-10 7L2 8"/></svg>
+                    </span>
+                    <div class="ci-text">
+                        <div class="ci-title">E-Mail</div>
+                        <div class="ci-sub">dkaruhn@proton.me</div>
+                    </div>
+                    <span class="ci-arrow">→</span>
+                </a>
+                <a class="contact-item" href="https://www.linkedin.com/in/darren-karuhn" target="_blank" rel="noopener">
+                    <span class="ci-ico">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8.5h4.9V24H.5zM9 8.5h4.7v2.1h.1c.7-1.3 2.5-2.7 5.1-2.7 5.4 0 6.4 3.5 6.4 8.1V24h-4.9v-6.8c0-1.6 0-3.7-2.3-3.7-2.3 0-2.6 1.7-2.6 3.6V24H9z"/></svg>
+                    </span>
+                    <div class="ci-text">
+                        <div class="ci-title">LinkedIn</div>
+                        <div class="ci-sub">Vernetzen</div>
+                    </div>
+                    <span class="ci-arrow">→</span>
+                </a>
+            </div>
         </div>
     </section>
 </main>
@@ -198,14 +183,11 @@
     </div>
 </footer>
 
-<!-- Intro Overlay -->
 <div id="intro" aria-hidden="true">
     <div class="intro__center">
         <div class="intro__badge">
             <span class="intro__angle">&lt;</span><span class="intro__tag">DK</span><span class="intro__slash">/&gt;</span>
         </div>
-
-        <!-- Typewriter -->
         <div class="intro__typewrap">
             <span id="introType" class="intro__type"></span>
             <span class="intro__caret" aria-hidden="true"></span>
